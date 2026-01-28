@@ -1,0 +1,1534 @@
+/*--------------------------------------------------
+Template Name: rokomary;
+Description: Creative Bootstrap4 Portfolio Template;
+-----------------------------------------------------
+
+    CSS INDEX
+    ================
+    1. Header CSS
+    2. Slider CSS
+    3. Skill Area CSS
+    4. Porfolio Area CSS
+    5. Newsletter CSS
+    6. Footer CSS
+    7. Breadcrumb CSS
+    8. Service CSS
+    9. Contact Area CSS
+    10. About Area CSS
+    11. Expert Area & Brand  CSS
+    12. Testmonial Area  CSS
+    13. Blog  CSS
+    14. Blog Details CSS
+
+-----------------------------------------------------*/
+/* googel font Poppins & Oswald */
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800|Open+Sans:400,600,700');
+
+/*----------------------------------------*/
+/* 1. Header CSS
+/*----------------------------------------*/
+.absolute-header {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.header-sticky.sticky {
+    background: #f2e283;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+    z-index: 1049;
+}
+
+.sticky {
+    -webkit-animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.ptb-40.sticky {
+    padding: 15px 0;
+}
+
+.sticky .logo img {
+    max-width: 170px;
+}
+
+.sticky .primary-menu-list > li a {
+    font-size: 14px;
+}
+
+.primary-menu-list > li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.primary-menu-list > li a {
+    color: #222;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 5px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.primary-menu-list li:hover > a {
+    color: #384a85;
+}
+
+.primary-menu-list > li > a::before {
+    background: #384a85 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+    position: absolute;
+    top: 26px;
+    -webkit-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+    width: 100%;
+}
+
+.primary-menu-list > li:hover > a::before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.primary-menu-list > li.active > a::before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.primary-menu-list > li.active > a {
+    color: #384a85;
+}
+
+.primary-menu-list > li.buy-now > a,
+.send-btn {
+    background: #384a85 none repeat scroll 0 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    border: 1px solid #384a85;
+}
+
+.primary-menu-list > li.buy-now > a:before {
+    display: none;
+}
+
+.primary-menu-list > li.buy-now > a:hover {
+    background: transparent;
+    color: #384a85;
+}
+
+.mobile-style-two.mean-container a.meanmenu-reveal{
+    color: #fff;
+}
+
+.mobile-style-two.mean-container a.meanmenu-reveal span{
+    background: #fff;
+}
+
+/* dropdown css start */
+.primary-menu-list > li ul.ht-dropdown.ht-dropdown {
+    background: #fff;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    padding: 15px;
+    -webkiit-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+    width: 180px;
+    visibility: hidden;
+    z-index: 999;
+    -webkit-transition: all 700ms ease 0s;
+    transition: all 700ms ease 0s;
+    -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.primary-menu-list li:hover > ul.ht-dropdown {
+    opacity: 1;
+    visibility: visible;
+    -webkiit-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.primary-menu-list > li > ul.ht-dropdown > li a {
+    border-bottom: 1px solid #ebebeb;
+    font-size: 12px;
+}
+
+.primary-menu-list > li > ul.ht-dropdown > li:last-child a {
+    border-bottom: none;
+}
+
+.primary-menu-list > li ul.ht-dropdown li {
+    position: relative;
+}
+
+.primary-menu-list > li i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.primary-menu-list > li > ul.ht-dropdown > li ul.sub-menu {
+    left: 100%;
+    top: 0;
+}
+
+/* dropdown css end */
+.menu-style-two .primary-menu-list > li > a::before {
+    background: #fff none repeat scroll 0 0;
+}
+
+.menu-style-two .primary-menu-list > li > a {
+    color: #fff;
+}
+
+.menu-style-two .primary-menu-list > li.buy-now > a:hover {
+    background: transparent none repeat scroll 0 0;
+    color: #fff;
+    border-color: #fff;
+}
+
+/*----------------------------------------*/
+/* 2. Slider CSS
+/*----------------------------------------*/
+.slider-area {
+    position: relative;
+}
+
+.slider-style-two:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+}
+
+.single-man {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    z-index: 12;
+}
+
+.man-style-two {
+    left: auto;
+    right: 19%;
+}
+
+.cd-headline.clip span {
+    padding: 0;
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+    background-color: #384a85;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+    color: #384a85;
+}
+
+.slider-text {
+    position: relative;
+    z-index: 55;
+}
+
+.slider-text h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.slider-text h1 {
+    font-size: 43px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.slider-text h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+.slider-style-two .slider-text h5,
+.slider-style-two .slider-text h1,
+.slider-style-two .slider-text h2 {
+    color: #fff;
+}
+
+.slider-style-two .cd-headline.clip .cd-words-wrapper::after {
+    background-color: #f1e282;
+}
+
+.slider-style-two .cd-headline.clip .cd-words-wrapper {
+    color: #f1e282;
+}
+
+/*----------------------------------------*/
+/* 3. Skill Area CSS
+/*----------------------------------------*/
+.progress-circular {
+    margin-right: 30px;
+}
+
+.progress-desc {
+    overflow: hidden;
+}
+
+.progress-h4 {
+    font-family: dosis;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* about section skill area css start */
+.skill-content {
+    margin-top: 40px;
+    overflow: hidden;
+    padding-right: 5.3%;
+    padding-top: 30px;
+}
+
+.skill .progress-bar {
+    background: #384a85 none repeat scroll 0 0;
+    position: relative;
+}
+
+.skill .progress .lead {
+    color: #222;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    text-transform: capitalize;
+    top: -35px;
+    width: 100%;
+    z-index: 99;
+}
+
+.progress-bar > span {
+    font-size: 14px;
+    height: 24px;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    top: -38px;
+    width: auto;
+}
+
+.progress-bar > span::before {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #000;
+    bottom: -8px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.skill .progress {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 13px;
+    margin-bottom: 55px;
+    overflow: visible;
+    position: relative;
+}
+
+.skill .progress:last-child {
+    margin-bottom: 0;
+}
+
+.skill-style-two .progress-circular {
+    margin-bottom: 30px;
+    margin-right: 0;
+}
+
+.skill-style-two .center-items {
+    text-align: center;
+    display: block;
+}
+
+/*----------------------------------------*/
+/* 4. Porfolio Area CSS
+/*----------------------------------------*/
+.progress-circular .knob {
+    height: 55px !important;
+    margin-left: -102px !important;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio:before {
+    background: rgba(255, 255, 255, 0.8);
+    content: "";
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.portfolio:hover:before,
+.portfolio:hover .portfolio-hover {
+    opacity: 1;
+}
+
+.portfolio-hover {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    -webkit-transform: translateY( -50%);
+    transform: translateY( -50%);
+    width: 100%;
+    z-index: 13;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.portfolio-hover h3 {
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px solid #959394;
+    display: inline-block;
+}
+
+.portfolio-hover h3 a{
+    color: #303030;
+}
+
+.portfolio-hover p {
+    text-transform: capitalize;
+}
+
+.porfolio-action {
+    margin-top: 20px;
+}
+
+.porfolio-action a {
+    color: #656364;
+    margin: 0 8px;
+    font-size: 18px;
+}
+
+.porfolio-action a:hover {
+    color: #384b86;
+}
+
+.portfolio {
+    margin-top: 30px;
+    position: relative;
+}
+
+.portfolio-menu button.active {
+    color: #384b86;
+}
+
+.portfolio-menu button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #9a9a9a;
+    text-transform: uppercase;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.g-0 .portfolio, .gx-0 .portfolio, .no-gutters .portfolio {
+    margin-top: 0;
+}
+
+/* portfolio details css */
+.same-style {
+    padding: 40px 0;
+}
+
+.portfolio-header {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.portfolio-header span,
+.sidebar-header span {
+    font-weight: 700;
+}
+
+.project-brief .single-quote {
+    margin-top: 20px;
+}
+
+.project-design-video img {
+    width: 100%;
+}
+
+.pagination li a {
+    color: #6d6d6d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pagination .fa-long-arrow-left {
+    margin-right: 5px;
+}
+
+.pagination .fa-long-arrow-right {
+    margin-left: 5px;
+}
+
+.pagination li a i {
+    vertical-align: middle;
+}
+
+.pagination li a:hover,
+.portfolio-dwonload li a:hover,.portfolio-hover h3 a:hover {
+    color: #384a85;
+}
+
+.sidebar-header {
+    border-bottom: 2px solid #222;
+    display: inline-block;
+    font-family: Dosis;
+    font-size: 24px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+.project-info:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.project-info h6 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.project-info p {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.instagram-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -5px;
+}
+
+.instagram-img li {
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    padding: 5px;
+}
+
+.instagram-img a img,
+.related-img img {
+    width: 100%;
+}
+
+.portfolio-dwonload li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.portfolio-dwonload li a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+}
+
+.portfolio-dwonload li img {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    width: auto;
+}
+
+.related-img.portfolio {
+    margin-top: 0;
+}
+/* quick view modal css */
+.modal-content {
+    padding: 50px 30px;
+}
+
+.modal-large {
+    max-width: 1050px;
+}
+
+.cus-modal-thumb img {
+    width: 100%;
+}
+
+.close.modal-close {
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    color: #222;
+    font-size: 24px;
+    height: 30px;
+    line-height: 28px;
+    opacity: 1;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    z-index: 11;
+}
+
+.close.modal-close:hover {
+    background: #384b86;
+    color: #fff;
+    border-color: #384b86;
+}
+
+.cus-modal-content {
+  padding-left: 15px;
+  padding-right: 100px;
+}
+
+.social-icons.social-icons--rounded ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.cus-modal-content b a {
+    color: #384b86;
+}
+
+.social-icons.social-icons--rounded ul li a {
+    border: 1px solid #384b86;
+    border-radius: 100%;
+    color: #384b86;
+    display: block;
+    font-size: 14px;
+    height: 35px;
+    line-height: 36px;
+    text-align: center;
+    width: 35px;
+}
+
+.social-icons.social-icons--rounded ul li a:hover {
+    background: #384b86;
+    color: #fff;
+}
+
+.cus-modal-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.cus-modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-large {
+    margin: 8.75rem auto;
+}
+
+/*----------------------------------------*/
+/* 5. Newsletter CSS
+/*----------------------------------------*/
+.newsletter-box {
+    margin: 30px auto 0;
+    position: relative;
+    max-width: 370px;
+}
+
+.newsletter-box .subscribe {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #777;
+    float: left;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px 15px;
+    width: calc(100% - 100px);
+}
+
+.newsletter-box .submit {
+    background: #384a85 none repeat scroll 0 0;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+    width: 100px;
+}
+
+.newsletter-box .submit:hover {
+    background: #f2e283  none repeat scroll 0 0;
+    color: #333;
+}
+
+/*----------------------------------------*/
+/* 6. Footer CSS
+/*----------------------------------------*/
+.footer-top {
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.single-footer h3 {
+    color: #606060;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.single-footer p {
+    color: #8e8e8e;
+}
+
+.padding-one {
+    padding-left: 55px;
+}
+
+.padding-two {
+    padding-left: 90px;
+}
+
+.copyright-text p {
+    color: #bcbcbc;
+    line-height: 1;
+}
+
+.copyright-text a {
+    color: #aaa;
+}
+
+.copyright-text a:hover,
+.social-footer li a:hover {
+    color: #384b86;
+}
+
+.slider-social {
+    bottom: 75px;
+    left: 75px;
+    position: absolute;
+    z-index: 55;
+}
+
+.slider-social li a {
+    margin-left: 0;
+    margin-bottom: 15px;
+    display: block;
+    color: #f1e282;
+}
+
+.slider-social li a:hover {
+    color: #fff;
+}
+
+.slider-social {
+    bottom: 75px;
+    left: 75px;
+    position: absolute;
+}
+
+.social-footer li a {
+    color: #bcbcbc;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.social-style-two {
+    right: 75px;
+    left: auto;
+}
+
+.social-style-two li {
+    display: inline-block;
+}
+
+.social-style-two li a {
+    margin-bottom: 0;
+    margin-left: 15px;
+    color: #989898;
+}
+
+.social-style-two li a:hover {
+    color: #384a85;
+}
+
+/*----------------------------------------*/
+/* 7. Breadcrumb CSS
+/*----------------------------------------*/
+.breadcrumb-list li.active a,
+.breadcrumb-list li:hover a {
+    color: #595959;
+}
+
+.breadcrumb-list li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #888;
+    margin: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.half-screen {
+    height: auto;
+    padding: 160px 0;
+}
+
+.half-screen .slider-text h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+/*----------------------------------------*/
+/* 8. Service CSS
+/*----------------------------------------*/
+.single-service {
+    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+}
+
+.service-tittle a {
+    border: 2px solid #f2e283;
+    display: inline-block;
+    height: 60px;
+    line-height: 55px;
+    position: relative;
+    text-align: center;
+    width: 60px;
+}
+
+.service-tittle h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.service-tittle p {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.single-service:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.service-img img {
+    max-width: 100%;
+}
+
+.service-header {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.single-package {
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding: 30px;
+    position: relative;
+}
+
+.single-package.active {
+    background: #eee;
+}
+
+.service-package .row {
+    padding: 0 70px;
+    margin: 0 -25px;
+}
+
+.service-package .row [class*="col"] {
+    padding: 0 25px;
+}
+
+.package-header h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.package-header img {
+    margin: 20px 0 15px;
+}
+
+.package-header h3 {
+    color: #384a85;
+    font-family: dosis;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.package-list li a {
+    color: #222;
+    display: block;
+    font-size: 15px;
+    padding-bottom: 20px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.package-list li a:hover {
+    color: #384a85;
+}
+
+.package-list {
+    padding-left: 35px;
+}
+
+.select-btn {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 28px;
+    text-transform: uppercase;
+}
+
+.select-btn.active,
+.select-btn:hover {
+    background: #384a85;
+    color: #fff;
+}
+
+.select-btn.active:hover {
+    background: #fff;
+    color: #384a85;
+}
+
+.package-list a::before {
+    content: "";
+    font-family: "icofont";
+    font-size: 18px;
+}
+
+/*----------------------------------------*/
+/* 9. Contact Area CSS
+/*----------------------------------------*/
+.contact-area {
+    margin-top: -310px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.contact-form {
+    background: #384a85 none repeat scroll 0 0;
+    padding: 90px 120px;
+}
+
+.contact-info {
+    background: #f2e283;
+}
+
+.contact-form h6 {
+    color: #fff;
+    font-family: open sans;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: inherit;
+}
+
+.contact-form label,
+.contact-form label {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.address-wrapper input,
+.address-wrapper textarea {
+    background: transparent;
+    border: 1px solid #959595;
+    margin-bottom: 10px;
+}
+
+.address-wrapper .form-control{
+    color: #fff;
+}
+
+.address-wrapper textarea {
+    height: 135px;
+    resize: none;
+}
+
+.send-btn {
+    background: #fff none repeat scroll 0 0;
+    color: #222;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.send-btn:hover {
+    background: #f2e283;
+}
+
+.single-info h6 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.single-info p,
+.single-info p a {
+    font-size: 16px;
+    color: #606060;
+}
+
+.single-info:not(:last-child) {
+    margin-bottom: 73px;
+}
+
+.about-desc.contact-desc.contact-header {
+  padding-left: 10px;
+}
+
+/*----------------------------------------*/
+/* 10. About Area CSS
+/*----------------------------------------*/
+.about-img {
+    padding-bottom: 30px;
+}
+
+.about-img img {
+    max-width: 100%;
+}
+
+.about-desc h2 {
+    font-size: 35px;
+}
+
+.about-desc h3 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin: 25px 0;
+}
+
+.about-desc p {
+    margin: auto;
+    width: 56%;
+}
+
+.contact-desc p {
+    width: 100%;
+    padding-right: 100px;
+}
+
+.contact-desc .blue-btn {
+  margin-top: 30px;
+  padding: 10px 25px;
+}
+
+.about-desc p + p {
+    margin-top: 15px;
+}
+
+/*----------------------------------------*/
+/* 11. Expert Area & Brand  CSS
+/*----------------------------------------*/
+.single-expert span {
+    color: #e9e9e9;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.single-expert h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+
+.brand-active.owl-carousel img {
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+/*----------------------------------------*/
+/* 12. Testmonial Area  CSS
+/*----------------------------------------*/
+.testmonial-img img{
+    width: 120px!important;
+    max-width: auto;
+}
+
+.testmonial-content p {
+    color: #898989;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.testmonial-content {
+    margin-left: 30px;
+}
+
+.testmonial-content h3 {
+    font-family: open sans;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.testmonial-content span {
+    color: #606060;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.client-says p {
+  padding-right: 80px;
+}
+
+/*----------------------------------------*/
+/* 13. Blog  CSS
+/*----------------------------------------*/
+.single-blog {
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.single-blog img {
+    width: 100%;
+}
+
+.meta-box li,
+.meta-box li a {
+    font-size: 13px;
+    color: #818181;
+}
+
+.meta-box {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.meta-box li span {
+    font-weight: 600;
+}
+
+.meta-box li + li:before {
+    content: "/";
+    margin: 0 5px;
+}
+
+.meta-date:after {
+    content: "-";
+    margin: 0 5px;
+}
+
+.blog-desc h4 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.blog-desc h4 a {
+    color: #222;
+}
+
+.blog-desc h4:hover a,
+.meta-box li a:hover {
+    color: #384a85;
+}
+
+.read-more {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #777;
+    font-weight: 600;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #384a85;
+}
+
+/*----------------------------------------*/
+/* 14. Blog Details CSS
+/*----------------------------------------*/
+.blog-dtl-header {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.training-topics {
+    margin-top: 25px;
+}
+
+.training-topics li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.training-topics li::before {
+    content: "";
+    font-family: FontAwesome;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.training-topics li a {
+    color: #606060;
+    display: block;
+    font-size: 14px;
+}
+
+.training-topics li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.blogquote {
+    background: #384a85 none repeat scroll 0 0;
+    padding: 80px 120px;
+}
+
+.blogquote p::before {
+    content: "";
+    font-family: FontAwesome;
+    left: -40px;
+    position: absolute;
+    top: -22px;
+}
+
+.blogquote p {
+    color: #fff;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 32px;
+    position: relative;
+}
+
+.single-comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.comment-img {
+    margin-right: 20px;
+}
+
+.author .single-comment {
+    background: #fafafa none repeat scroll 0 0;
+    padding: 50px 40px;
+    margin-bottom: 60px;
+}
+
+.comment-desc h6 {
+    font-weight: 600;
+}
+
+.comment-desc h6 a {
+    color: #5f5f5f;
+}
+
+.comment-desc h6:hover a,
+.tags-social li a:hover,
+.recent-desc h6 a:hover,
+.categorie-list li:hover a,
+.training-topics li a:hover {
+    color: #384a85;
+}
+
+.author .single-comment {
+    margin-bottom: 0;
+}
+
+.author h6 {
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.t-list {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.tags-social li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #656565;
+    margin-left: 5px;
+}
+
+.tags-social {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.comments-area .single-comment:nth-child(odd) {
+    padding-left: 130px;
+}
+
+.comment-title {
+    margin-bottom: 10px;
+}
+
+.comment-title span {
+    display: inline-block;
+    font-size: 14px;
+    color: #a2a2a2;
+    margin-top: 5px;
+}
+
+.comment-reply a {
+    color: #384a85;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.comment-reply a:hover {
+    color: #222;
+}
+
+.submit-review .form-group {
+    margin-bottom: 45px;
+}
+
+.submit-review .form-group input,
+.submit-review textarea {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: currentcolor currentcolor #eee;
+    -o-border-image: none;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    font-size: 14px;
+    padding-left: 0;
+}
+
+.submit-review .form-group input:focus,
+.submit-review textarea:focus {
+    border-color: #384a85;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.leave-reply {
+    font-family: open sans;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.submit-review textarea {
+    height: 100px;
+}
+
+.transparent-btn.blue-btn.send-now {
+    font-weight: 600;
+    margin-top: 0;
+    font-size: 15px;
+    padding: 10px 28px;
+}
+
+/* blog sidebar css */
+.right-sidebar {
+    padding-left: 25px;
+}
+
+.blog-sidebar .sidebar-header {
+    font-weight: 600;
+}
+
+.search-box-view {
+    position: relative;
+}
+
+.search-box-view input {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #777;
+    font-size: 14px;
+    height: 50px;
+    padding: 0 65px 0 20px;
+    width: 100%;
+}
+
+.search-box-view input:focus {
+    border-color: #384a85;
+}
+
+.search-box-view button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    color: #222;
+    background: transparent;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -webkit-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+    width: 55px;
+}
+
+.search-box-view button:hover {
+    background: #384a85;
+    color: #fff;
+}
+
+.single-recent-post {
+    overflow: hidden;
+}
+
+.recent-img {
+    float: left;
+    padding-right: 15px;
+    width: 100px;
+}
+
+.recent-img img {
+    width: 100%;
+}
+
+.recent-desc span {
+    color: #7a7a7a;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.recent-desc h6 {
+    font-weight: 600;
+}
+
+.recent-desc h6 a {
+    color: #222;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.all-recent-post .single-recent-post:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.categorie-list li {
+    font-size: 15px;
+}
+
+.categorie-list li a {
+    color: #222;
+    font-size: 15px;
+}
+
+.categorie-list li span {
+    float: right;
+}
+
+.categorie-list li:not(:last-child) {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.tag-list {
+    margin: 0 -6px;
+}
+
+.tag-list li a {
+    background-color: #384a85;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0 6px 12px;
+    padding: 7px 16px;
+    text-transform: capitalize;
+}
+
+.tag-list li a:hover {
+    background: #f2e283;
+    color: #222;
+}
